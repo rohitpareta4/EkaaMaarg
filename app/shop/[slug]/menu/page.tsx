@@ -5,6 +5,8 @@ import { getBusinessBySlug } from "@/lib/businesses";
 import { getRestaurantMenuBySlug } from "@/lib/restaurants";
 import RestaurantMenu from "@/components/business/RestaurantMenu";
 
+export const instant = false;
+
 type MenuPageProps = {
   params: Promise<{ slug: string }>;
 };
