@@ -1,5 +1,3 @@
-
-
 export type BusinessFeatures = {
   digitalProfile: boolean;
   productCatalogue: boolean;
