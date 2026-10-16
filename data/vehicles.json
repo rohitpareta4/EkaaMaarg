@@ -1,0 +1,72 @@
+
+[
+  {
+    "id": "hero-splendor-plus",
+    "showroomSlug": "demo-bike-showroom",
+    "name": "Hero Splendor Plus",
+    "brand": "Hero",
+    "type": "bike",
+    "variant": "Standard",
+    "price": {
+      "exShowroom": 75900,
+      "onRoad": null
+    },
+    "fuelType": "Petrol",
+    "engine": "97.2 cc",
+    "mileage": "Check with showroom",
+    "description": "A commuter motorcycle designed for everyday travel.",
+    "features": [
+      "97.2 cc engine",
+      "Electric start availability depends on variant",
+      "Designed for daily commuting"
+    ],
+    "image": "https://placehold.co/800x600?text=Hero+Splendor+Plus",
+    "isActive": true
+  },
+  {
+    "id": "honda-activa",
+    "showroomSlug": "demo-bike-showroom",
+    "name": "Honda Activa",
+    "brand": "Honda",
+    "type": "scooty",
+    "variant": "Standard",
+    "price": {
+      "exShowroom": 78000,
+      "onRoad": null
+    },
+    "fuelType": "Petrol",
+    "engine": "110 cc class",
+    "mileage": "Check with showroom",
+    "description": "A scooter designed for convenient everyday mobility.",
+    "features": [
+      "Automatic transmission",
+      "Under-seat storage",
+      "Features vary by model and variant"
+    ],
+    "image": "https://placehold.co/800x600?text=Honda+Activa",
+    "isActive": true
+  },
+  {
+    "id": "maruti-baleno",
+    "showroomSlug": "demo-car-showroom",
+    "name": "Maruti Suzuki Baleno",
+    "brand": "Maruti Suzuki",
+    "type": "car",
+    "variant": "Base variant",
+    "price": {
+      "exShowroom": 600000,
+      "onRoad": null
+    },
+    "fuelType": "Petrol",
+    "engine": "Check current specification",
+    "mileage": "Check with showroom",
+    "description": "A hatchback for everyday city and highway travel.",
+    "features": [
+      "Multiple variants may be available",
+      "Safety and convenience features vary by variant",
+      "Ask the showroom about a test drive"
+    ],
+    "image": "https://placehold.co/800x600?text=Maruti+Baleno",
+    "isActive": true
+  }
+]

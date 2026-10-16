@@ -1,0 +1,257 @@
+
+[
+  {
+    "id": "shop_001",
+    "slug": "sanjay-electricals",
+    "name": "Sanjay Electricals",
+    "category": "electronics",
+    "description": "Electrical products aur household electrical supplies ke liye demo business profile.",
+    "phone": "9876543210",
+    "whatsapp": "919876543210",
+    "address": "Kota, Rajasthan, India",
+    "city": "Kota",
+    "image": "/images/shops/sanjay-electricals.jpg",
+    "services": [
+      "Electrical supplies",
+      "Home electrical products",
+      "Electrical accessories",
+      "Lighting products"
+    ],
+    "welcomeMessage": "Swagat hai aapka Sanjay Electricals mein.",
+    "isActive": true,
+    "features": {
+      "digitalProfile": true,
+      "productCatalogue": true,
+      "serviceCatalogue": true,
+      "whatsappEnquiries": true,
+      "onlineOrdering": false,
+      "appointmentBooking": false,
+      "staffRequests": false,
+      "requestBill": false,
+      "customerReviews": true
+    }
+  },
+  {
+    "id": "shop_002",
+    "slug": "apna-cafe",
+    "name": "Apna Cafe",
+    "category": "restaurants",
+    "description": "Tea, coffee aur snacks ke liye demo cafe profile.",
+    "phone": "9876543211",
+    "whatsapp": "919549657481",
+    "address": "Kota, Rajasthan, India",
+    "city": "Kota",
+    "image": "/images/shops/apna-cafe.jpg",
+    "services": [
+      "Tea and coffee",
+      "Snacks",
+      "Cold beverages",
+      "Quick bites"
+    ],
+    "welcomeMessage": "Swagat hai aapka Apna Cafe mein.",
+    "isActive": true,
+    "features": {
+      "digitalProfile": true,
+      "productCatalogue": false,
+      "serviceCatalogue": true,
+      "whatsappEnquiries": true,
+      "onlineOrdering": true,
+      "appointmentBooking": false,
+      "staffRequests": false,
+      "requestBill": false,
+      "customerReviews": true
+    }
+  },
+  {
+    "id": "shop_003",
+    "slug": "city-mobile-store",
+    "name": "City Mobile Store",
+    "category": "electronics",
+    "description": "Mobile phones aur accessories ke liye demo business profile.",
+    "phone": "9876543212",
+    "whatsapp": "919876543212",
+    "address": "Kota, Rajasthan, India",
+    "city": "Kota",
+    "image": "/images/shops/city-mobile-store.jpg",
+    "services": [
+      "Mobile accessories",
+      "Chargers and cables",
+      "Earphones",
+      "Mobile covers"
+    ],
+    "welcomeMessage": "Swagat hai aapka City Mobile Store mein.",
+    "isActive": true,
+    "features": {
+      "digitalProfile": true,
+      "productCatalogue": true,
+      "serviceCatalogue": false,
+      "whatsappEnquiries": true,
+      "onlineOrdering": false,
+      "appointmentBooking": false,
+      "staffRequests": false,
+      "requestBill": false,
+      "customerReviews": true
+    }
+  },
+  {
+    "id": "shop_004",
+    "slug": "royal-fashion",
+    "name": "Royal Fashion",
+    "category": "clothing",
+    "description": "Clothing aur fashion products ke liye demo shop profile.",
+    "phone": "9876543213",
+    "whatsapp": "919876543213",
+    "address": "Kota, Rajasthan, India",
+    "city": "Kota",
+    "image": "/images/shops/royal-fashion.jpg",
+    "services": [
+      "Men's clothing",
+      "Women's clothing",
+      "Fashion accessories",
+      "Everyday wear"
+    ],
+    "welcomeMessage": "Swagat hai aapka Royal Fashion mein.",
+    "isActive": true,
+    "features": {
+      "digitalProfile": true,
+      "productCatalogue": true,
+      "serviceCatalogue": false,
+      "whatsappEnquiries": true,
+      "onlineOrdering": false,
+      "appointmentBooking": false,
+      "staffRequests": false,
+      "requestBill": false,
+      "customerReviews": true
+    }
+  },
+  {
+    "id": "shop_005",
+    "slug": "city-beauty-salon",
+    "name": "City Beauty Salon",
+    "category": "beauty-salon",
+    "description": "Beauty aur grooming services ke liye demo salon profile.",
+    "phone": "9876543214",
+    "whatsapp": "919876543214",
+    "address": "Kota, Rajasthan, India",
+    "city": "Kota",
+    "image": "/images/shops/city-beauty-salon.jpg",
+    "services": [
+      "Haircut",
+      "Hair styling",
+      "Basic grooming",
+      "Beauty services"
+    ],
+    "welcomeMessage": "Swagat hai aapka City Beauty Salon mein.",
+    "isActive": true,
+    "features": {
+      "digitalProfile": true,
+      "productCatalogue": false,
+      "serviceCatalogue": true,
+      "whatsappEnquiries": true,
+      "onlineOrdering": false,
+      "appointmentBooking": true,
+      "staffRequests": false,
+      "requestBill": false,
+      "customerReviews": true
+    }
+  },
+  {
+    "id": "shop_006",
+    "slug": "shree-stationery",
+    "name": "Shree Stationery",
+    "category": "stationery",
+    "description": "Books, notebooks aur stationery products ke liye demo shop profile.",
+    "phone": "9876543215",
+    "whatsapp": "919876543215",
+    "address": "Kota, Rajasthan, India",
+    "city": "Kota",
+    "image": "/images/shops/shree-stationery.jpg",
+    "services": [
+      "Notebooks",
+      "Pens and pencils",
+      "School stationery",
+      "Office supplies"
+    ],
+    "welcomeMessage": "Swagat hai aapka Shree Stationery mein.",
+    "isActive": true,
+    "features": {
+      "digitalProfile": true,
+      "productCatalogue": true,
+      "serviceCatalogue": false,
+      "whatsappEnquiries": true,
+      "onlineOrdering": false,
+      "appointmentBooking": false,
+      "staffRequests": false,
+      "requestBill": false,
+      "customerReviews": true
+    }
+  },
+  
+  {
+    "id": "demo-bike-showroom",
+    "slug": "demo-bike-showroom",
+    "name": "Demo Bike & Scooty Showroom",
+    "category": "vehicle-showroom",
+    "description": "Explore bikes and scooties in our digital vehicle catalogue.",
+    "phone": "9999999991",
+    "whatsapp": "919999999991",
+    "address": "Demo Address, Kota, Rajasthan",
+    "city": "Kota",
+    "image": "https://placehold.co/1200x675?text=Bike+and+Scooty+Showroom",
+    "services": [
+      "Explore bikes",
+      "Explore scooties",
+      "Vehicle enquiries",
+      "Test drive enquiries"
+    ],
+    "welcomeMessage": "Welcome! Explore our bikes and scooties, listen to their features, and contact us for current prices.",
+    "isActive": true,
+    "features": {
+      "digitalProfile": true,
+      "productCatalogue": true,
+      "serviceCatalogue": true,
+      "whatsappEnquiries": true,
+      "onlineOrdering": false,
+      "appointmentBooking": false,
+      "staffRequests": false,
+      "requestBill": false,
+      "customerReviews": false,
+      "digitalMenu": false,
+      "vehicleCatalogue": true
+    }
+  },
+  {
+    "id": "demo-car-showroom",
+    "slug": "demo-car-showroom",
+    "name": "Demo Car Showroom",
+    "category": "vehicle-showroom",
+    "description": "Explore cars, specifications, and available variants.",
+    "phone": "9999999992",
+    "whatsapp": "919999999992",
+    "address": "Demo Address, Kota, Rajasthan",
+    "city": "Kota",
+    "image": "https://placehold.co/1200x675?text=Car+Showroom",
+    "services": [
+      "Explore cars",
+      "Compare specifications",
+      "Vehicle enquiries",
+      "Test drive enquiries"
+    ],
+    "welcomeMessage": "Welcome! Explore our car catalogue and contact us for current prices and available variants.",
+    "isActive": true,
+    "features": {
+      "digitalProfile": true,
+      "productCatalogue": true,
+      "serviceCatalogue": true,
+      "whatsappEnquiries": true,
+      "onlineOrdering": false,
+      "appointmentBooking": false,
+      "staffRequests": false,
+      "requestBill": false,
+      "customerReviews": false,
+      "digitalMenu": false,
+      "vehicleCatalogue": true
+    }
+  }
+
+]

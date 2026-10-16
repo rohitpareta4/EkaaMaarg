@@ -1,0 +1,48 @@
+[
+  {
+    "businessSlug": "apna-cafe",
+    "items": [
+      {
+        "id": "masala-chai",
+        "name": "Masala Chai",
+        "description": "Traditional Indian tea with aromatic spices.",
+        "price": 20
+      },
+      {
+        "id": "cold-coffee",
+        "name": "Cold Coffee",
+        "description": "Chilled coffee drink.",
+        "price": 80
+      },
+      {
+        "id": "veg-sandwich",
+        "name": "Veg Sandwich",
+        "description": "Fresh vegetable sandwich.",
+        "price": 60
+      },
+      {
+        "id": "french-fries",
+        "name": "French Fries",
+        "description": "Crispy golden potato fries.",
+        "price": 70
+      }
+    ]
+  },
+  {
+    "businessSlug": "royal-biryani",
+    "items": [
+      {
+        "id": "veg-biryani",
+        "name": "Veg Biryani",
+        "description": "Aromatic rice cooked with vegetables and spices.",
+        "price": 120
+      },
+      {
+        "id": "chicken-biryani",
+        "name": "Chicken Biryani",
+        "description": "Chicken biryani with fragrant spices.",
+        "price": 180
+      }
+    ]
+  }
+]
