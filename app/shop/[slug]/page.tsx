@@ -64,7 +64,7 @@ export default async function ShopPage({ params }: ShopPageProps) {
         </Link>
 
         <article className="mt-5 overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
-          <div className="relative aspect-[16/9] w-full bg-gray-100">
+          <div className="relative aspect-[11/12] w-full bg-gray-100">
             <Image
               src={shop.image}
               alt={`${shop.name} business`}

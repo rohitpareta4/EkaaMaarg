@@ -6,18 +6,21 @@
     "name": "Sanjay Electricals",
     "category": "electronics",
     "description": "Electrical products aur household electrical supplies ke liye demo business profile.",
-    "phone": "9876543210",
-    "whatsapp": "919876543210",
-    "address": "Kota, Rajasthan, India",
-    "city": "Kota",
-    "image": "/images/shops/sanjay-electricals.jpg",
+    "phone": "9829374593",
+    "whatsapp": "919829374593",
+    "address": "Baran, Rajasthan, India",
+    "city": "Baran",
+    "image": "https://content3.jdmagicbox.com/comp/baran/b5/9999p7452.7452.110326131424.r9b5/catalogue/sanjay-electricals-barana-baran-electrical-shops-kfkdjfwci4.jpg",
     "services": [
       "Electrical supplies",
       "Home electrical products",
       "Electrical accessories",
-      "Lighting products"
+      "Lighting products",
+      "AC Service",
+      "Gyser Service & Installation",
+      "Fridge,Washing Machine Servies"
     ],
-    "welcomeMessage": "Swagat hai aapka Sanjay Electricals mein.",
+    "welcomeMessage": "🙏 संजय इलेक्ट्रिकल्स में आपका हार्दिक स्वागत है! हमारे यहाँ घर और दुकान के लिए सभी प्रकार के लाइट एवं प्रकाश संबंधी उत्पाद, बिजली का सामान और इलेक्ट्रिकल एक्सेसरीज़ उपलब्ध हैं। इसके साथ ही, हम आरओ, गीजर, एयर कंडीशनर (AC), वॉशिंग मशीन और फ्रिज की सर्विसिंग एवं इंस्टॉलेशन की सुविधा भी प्रदान करते हैं। आपको नए उत्पाद खरीदने हों या अपने घरेलू उपकरणों की सर्विसिंग अथवा इंस्टॉलेशन करवानी हो, हम आपकी सहायता के लिए तत्पर हैं। आपकी सुविधा, हमारी प्राथमिकता! किसी भी उत्पाद की जानकारी या सर्विस के लिए हमसे संपर्क करें",
     "isActive": true,
     "features": {
       "digitalProfile": true,

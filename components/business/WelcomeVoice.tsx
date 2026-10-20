@@ -1,31 +1,34 @@
 
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type WelcomeVoiceProps = {
   message: string;
+  audioSrc?: string;
 };
 
 export default function WelcomeVoice({
   message,
+  audioSrc = "/audio/sanjay_electricals.mp3",
 }: WelcomeVoiceProps) {
-  const [supported, setSupported] = useState(false);
+  const audioRef = useRef<HTMLAudioElement>(null);
   const [speaking, setSpeaking] = useState(false);
+  const [useBrowserVoice, setUseBrowserVoice] = useState(false);
 
   useEffect(() => {
-    setSupported(
-      "speechSynthesis" in window &&
-        "SpeechSynthesisUtterance" in window
-    );
-
     return () => {
+      audioRef.current?.pause();
       window.speechSynthesis?.cancel();
     };
   }, []);
 
-  function speakMessage() {
-    if (!("speechSynthesis" in window)) return;
+  function speakWithBrowser() {
+    if (!("speechSynthesis" in window)) {
+      setSpeaking(false);
+      console.error("Browser speech is not supported.");
+      return;
+    }
 
     window.speechSynthesis.cancel();
 
@@ -41,21 +44,56 @@ export default function WelcomeVoice({
     window.speechSynthesis.speak(utterance);
   }
 
-  function stopMessage() {
-    window.speechSynthesis.cancel();
-    setSpeaking(false);
+  async function speakMessage() {
+    const audio = audioRef.current;
+
+    if (!audio || useBrowserVoice) {
+      speakWithBrowser();
+      return;
+    }
+
+    window.speechSynthesis?.cancel();
+    audio.pause();
+    audio.currentTime = 0;
+
+    try {
+      await audio.play();
+    } catch (error) {
+      console.warn(
+        "Saved audio unavailable. Using browser voice instead.",
+        error
+      );
+
+      audio.pause();
+      audio.currentTime = 0;
+      setUseBrowserVoice(true);
+      speakWithBrowser();
+    }
   }
 
-  if (!supported) {
-    return (
-      <p className="mt-3 text-sm text-gray-600">
-        Voice playback is not supported in this browser.
-      </p>
-    );
+  function stopMessage() {
+    audioRef.current?.pause();
+
+    if (audioRef.current) {
+      audioRef.current.currentTime = 0;
+    }
+
+    window.speechSynthesis?.cancel();
+    setSpeaking(false);
   }
 
   return (
     <div className="mt-4 flex flex-wrap gap-3">
+      <audio
+        ref={audioRef}
+        src={audioSrc}
+        preload="none"
+        onPlay={() => setSpeaking(true)}
+        onEnded={() => setSpeaking(false)}
+        onPause={() => setSpeaking(false)}
+        onError={() => setUseBrowserVoice(true)}
+      />
+
       <button
         type="button"
         onClick={speakMessage}
