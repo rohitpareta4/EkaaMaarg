@@ -1,5 +1,7 @@
 
 import Link from "next/link";
+import Image from "next/image";
+
 
 const categories = [
   { name: "Electricians", icon: "⚡", slug: "electricians" },
@@ -16,7 +18,13 @@ export default function HomePage() {
       <header className="border-b bg-white">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
           <Link href="/" className="text-2xl font-bold text-green-700">
-            ApnaSaathi
+            <Image
+  src="/logo/Logo.png"
+  alt="ApnaSaathi Logo"
+  width={100}
+  height={50}
+  className="transition-transform duration-300 ease-in-out hover:scale-110"
+/>
           </Link>
 
           <Link
@@ -120,7 +128,7 @@ export default function HomePage() {
       </section>
 
       <footer className="border-t bg-white px-5 py-6 text-center text-sm text-gray-500">
-        © 2026 ApnaSaathi · Kota, Rajasthan
+        © 2026 EkaaMaarg · Kota, Rajasthan
       </footer>
     </main>
   );

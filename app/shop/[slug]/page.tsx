@@ -45,7 +45,13 @@ export default async function ShopPage({ params }: ShopPageProps) {
       <header className="border-b bg-white">
         <div className="mx-auto flex max-w-4xl items-center justify-between px-5 py-4">
           <Link href="/" className="text-xl font-bold text-green-700">
-            EkaaMaarg
+              <Image
+        src="/logo/Logo.png"
+        alt="ApnaSaathi Logo"
+        width={100}
+        height={50}
+        className="transition-transform duration-300 ease-in-out hover:scale-110"
+      />
           </Link>
 
           <Link

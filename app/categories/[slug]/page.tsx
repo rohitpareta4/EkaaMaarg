@@ -2,6 +2,8 @@ import { Suspense } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getBusinessesByCategory } from "@/lib/businesses";
+import Image from "next/image";
+
 
 type CategoryPageProps = {
   params: Promise<{ slug: string }>;
@@ -38,7 +40,13 @@ async function CategoryContent({ params }: CategoryPageProps) {
       <header className="border-b border-gray-100 bg-white">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8">
           <Link href="/" className="text-2xl font-extrabold tracking-tight">
-            Apna<span className="text-green-700">Saathi</span>
+              <Image
+        src="/logo/Logo.png"
+        alt="ApnaSaathi Logo"
+        width={100}
+        height={50}
+        className="transition-transform duration-300 ease-in-out hover:scale-110"
+      />
           </Link>
 
           <Link
