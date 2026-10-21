@@ -1,0 +1,160 @@
+
+{
+  "shops": [
+    {
+      "id": "shop-004",
+      "slug": "royal-fashion",
+      "name": "Royal Fashion"
+    }
+  ],
+  "products": [
+    {
+      "id": "product-001",
+      "shopSlug": "royal-fashion",
+      "name": "Classic Casual Shirt",
+      "brand": "Roadster",
+      "description": "Comfortable casual shirt for everyday wear.",
+      "price": 899,
+      "colors": ["Black", "White", "Navy Blue"],
+      "sizes": ["S", "M", "L", "XL"],
+      "image": "/images/clothing/shirt-black-1.jpg",
+      "images": [
+        "/images/clothing/shirt-black-1.jpg",
+        "/images/clothing/shirt-black-2.jpg",
+        "/images/clothing/shirt-black-3.jpg",
+        "/images/clothing/shirt-black-4.jpg"
+      ],
+      "inStock": true
+    },
+    {
+      "id": "product-002",
+      "shopSlug": "royal-fashion",
+      "name": "Slim Fit Denim Jeans",
+      "brand": "Levi's",
+      "description": "Modern slim-fit denim jeans for casual outfits.",
+      "price": 1799,
+      "colors": ["Blue", "Black", "Light Blue"],
+      "sizes": ["30", "32", "34", "36"],
+      "image": "/images/clothing/jeans-blue-1.jpg",
+      "images": [
+        "/images/clothing/jeans-blue-1.jpg",
+        "/images/clothing/jeans-blue-2.jpg",
+        "/images/clothing/jeans-blue-3.jpg",
+        "/images/clothing/jeans-blue-4.jpg"
+      ],
+      "inStock": true
+    },
+    {
+      "id": "product-003",
+      "shopSlug": "royal-fashion",
+      "name": "Formal Cotton Trousers",
+      "brand": "Arrow",
+      "description": "Smart formal trousers for office wear.",
+      "price": 1499,
+      "colors": ["Black", "Grey", "Navy Blue"],
+      "sizes": ["30", "32", "34", "36"],
+      "image": "/images/clothing/trousers-grey-1.jpg",
+      "images": [
+        "/images/clothing/trousers-grey-1.jpg",
+        "/images/clothing/trousers-grey-2.jpg"
+      ],
+      "inStock": true
+    },
+    {
+      "id": "product-004",
+      "shopSlug": "royal-fashion",
+      "name": "Oversized Graphic T-Shirt",
+      "brand": "Urban Style",
+      "description": "Relaxed-fit graphic T-shirt for casual outings.",
+      "price": 599,
+      "colors": ["White", "Black", "Olive"],
+      "sizes": ["S", "M", "L", "XL"],
+      "image": "/images/clothing/tshirt-white-1.jpg",
+      "images": [
+        "/images/clothing/tshirt-white-1.jpg",
+        "/images/clothing/tshirt-white-2.jpg"
+      ],
+      "inStock": true
+    },
+    {
+      "id": "product-005",
+      "shopSlug": "royal-fashion",
+      "name": "Women's Denim Jacket",
+      "brand": "Denim House",
+      "description": "Stylish denim jacket for casual styling.",
+      "price": 1599,
+      "colors": ["Blue", "Light Blue"],
+      "sizes": ["S", "M", "L", "XL"],
+      "image": "/images/clothing/jacket-blue-1.jpg",
+      "images": [
+        "/images/clothing/jacket-blue-1.jpg",
+        "/images/clothing/jacket-blue-2.jpg"
+      ],
+      "inStock": true
+    },
+    {
+      "id": "product-006",
+      "shopSlug": "royal-fashion",
+      "name": "Cotton Casual Top",
+      "brand": "Everyday Wear",
+      "description": "Lightweight cotton top for everyday comfort.",
+      "price": 699,
+      "colors": ["Pink", "White", "Lavender"],
+      "sizes": ["S", "M", "L", "XL"],
+      "image": "/images/clothing/top-pink-1.jpg",
+      "images": [
+        "/images/clothing/top-pink-1.jpg",
+        "/images/clothing/top-pink-2.jpg"
+      ],
+      "inStock": true
+    },
+    {
+      "id": "product-007",
+      "shopSlug": "royal-fashion",
+      "name": "Classic Cotton Kurta",
+      "brand": "Ethnic Collection",
+      "description": "Traditional cotton kurta for festive and everyday wear.",
+      "price": 999,
+      "colors": ["White", "Cream", "Black"],
+      "sizes": ["S", "M", "L", "XL"],
+      "image": "/images/clothing/kurta-white-1.jpg",
+      "images": [
+        "/images/clothing/kurta-white-1.jpg",
+        "/images/clothing/kurta-white-2.jpg"
+      ],
+      "inStock": true
+    },
+    {
+      "id": "product-008",
+      "shopSlug": "royal-fashion",
+      "name": "Embroidered Women's Kurta",
+      "brand": "Ethnic Collection",
+      "description": "Elegant embroidered kurta for special occasions.",
+      "price": 1299,
+      "colors": ["Maroon", "Green", "Pink"],
+      "sizes": ["S", "M", "L", "XL"],
+      "image": "/images/clothing/kurta-maroon-1.jpg",
+      "images": [
+        "/images/clothing/kurta-maroon-1.jpg",
+        "/images/clothing/kurta-maroon-2.jpg"
+      ],
+      "inStock": true
+    },
+    {
+      "id": "product-009",
+      "shopSlug": "royal-fashion",
+      "name": "Festive Anarkali Suit",
+      "brand": "Ethnic Collection",
+      "description": "Traditional Anarkali suit for festive celebrations.",
+      "price": 2499,
+      "colors": ["Red", "Royal Blue"],
+      "sizes": ["S", "M", "L", "XL"],
+      "image": "/images/clothing/anarkali-red-1.jpg",
+      "images": [
+        "/images/clothing/anarkali-red-1.jpg",
+        "/images/clothing/anarkali-red-2.jpg"
+      ],
+      "inStock": true
+    }
+  ]
+}

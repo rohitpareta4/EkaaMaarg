@@ -8,7 +8,6 @@ import WelcomeVoice from "@/components/business/WelcomeVoice";
 
 export const instant = false;
 
-
 type ShopPageProps = {
   params: Promise<{ slug: string }>;
 };
@@ -17,7 +16,7 @@ export default async function ShopPage({ params }: ShopPageProps) {
   const { slug } = await params;
   const shop = await getBusinessBySlug(slug);
 
-  if (!shop) {
+  if (!shop || !shop.isActive) {
     notFound();
   }
 
@@ -124,6 +123,30 @@ export default async function ShopPage({ params }: ShopPageProps) {
                 Directions
               </a>
 
+              {/* Clothing catalogue button */}
+              {shop.category === "clothing" &&
+                features.productCatalogue && (
+                  <Link
+                    href={`/shop/${shop.slug}/clothing`}
+                    className="flex items-center justify-center gap-2 rounded-xl bg-green-700 px-4 py-3 font-semibold text-white hover:bg-green-800"
+                  >
+                    <span aria-hidden="true">🛍️</span>
+                    View Clothing Catalogue →
+                  </Link>
+                )}
+
+              {/* Vehicle catalogue button */}
+              {shop.features?.vehicleCatalogue && (
+                <Link
+                  href={`/shop/${shop.slug}/vehicles`}
+                  className="flex items-center justify-center gap-2 rounded-xl bg-green-700 px-4 py-3 font-semibold text-white hover:bg-green-800"
+                >
+                  <span aria-hidden="true">🚗</span>
+                  View Vehicle Catalogue →
+                </Link>
+              )}
+
+              {/* Restaurant menu button */}
               {shop.category === "restaurants" &&
                 features.digitalMenu && (
                   <Link
@@ -152,15 +175,10 @@ export default async function ShopPage({ params }: ShopPageProps) {
               </section>
             )}
 
-            {(features.serviceCatalogue || features.productCatalogue) && (
+            {/* Keep the existing services list */}
+            {features.serviceCatalogue && (
               <section className="mt-8">
-                <h2 className="text-xl font-bold">
-                  {features.productCatalogue && features.serviceCatalogue
-                    ? "Services & Products"
-                    : features.productCatalogue
-                      ? "Products"
-                      : "Services"}
-                </h2>
+                <h2 className="text-xl font-bold">Services</h2>
 
                 <ul className="mt-4 grid gap-3 sm:grid-cols-2">
                   {shop.services.map((service) => (
