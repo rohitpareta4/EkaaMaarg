@@ -73,7 +73,7 @@ export default async function ClothingPage({
                 key={product.id}
                 className="overflow-hidden rounded-2xl border border-gray-200 bg-white transition hover:shadow-md"
               >
-                <div className="relative aspect-[4/5] bg-gray-100">
+                <div className="relative aspect-[4/5] bg-gray-100 ease-in-out hover:scale-110">
                   <Image
                     src={product.image}
                     alt={product.name}
