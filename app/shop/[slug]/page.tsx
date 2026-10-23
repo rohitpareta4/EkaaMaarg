@@ -40,18 +40,25 @@ export default async function ShopPage({ params }: ShopPageProps) {
     shop.address
   )}`;
 
+  // Google review URL is optional until added to the business data.
+  const googleReviewUrl =
+    "googleReviewUrl" in shop &&
+    typeof shop.googleReviewUrl === "string"
+      ? shop.googleReviewUrl.trim()
+      : "";
+
   return (
     <main className="min-h-screen bg-gray-50 text-gray-900">
       <header className="border-b bg-white">
         <div className="mx-auto flex max-w-4xl items-center justify-between px-5 py-4">
           <Link href="/" className="text-xl font-bold text-green-700">
-              <Image
-        src="/logo/Logo.png"
-        alt="ApnaSaathi Logo"
-        width={100}
-        height={50}
-        className="transition-transform duration-300 ease-in-out hover:scale-110"
-      />
+            <Image
+              src="/logo/Logo.png"
+              alt="ApnaSaathi Logo"
+              width={100}
+              height={50}
+              className="transition-transform duration-300 ease-in-out hover:scale-110"
+            />
           </Link>
 
           <Link
@@ -99,6 +106,7 @@ export default async function ShopPage({ params }: ShopPageProps) {
             </div>
 
             <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
+              {/* Call Shop */}
               <a
                 href={`tel:${phone}`}
                 className="flex items-center justify-center gap-2 rounded-xl bg-green-700 px-4 py-3 font-semibold text-white hover:bg-green-800"
@@ -107,6 +115,7 @@ export default async function ShopPage({ params }: ShopPageProps) {
                 Call Shop
               </a>
 
+              {/* WhatsApp */}
               {features.whatsappEnquiries && (
                 <a
                   href={`https://wa.me/${whatsapp}`}
@@ -119,6 +128,7 @@ export default async function ShopPage({ params }: ShopPageProps) {
                 </a>
               )}
 
+              {/* Directions */}
               <a
                 href={mapUrl}
                 target="_blank"
@@ -129,7 +139,29 @@ export default async function ShopPage({ params }: ShopPageProps) {
                 Directions
               </a>
 
-              {/* Clothing catalogue button */}
+              {/* AI-assisted Google Review page for this business */}
+              <Link
+                href={`/review/${encodeURIComponent(shop.slug)}`}
+                className="flex items-center justify-center gap-2 rounded-xl bg-green-700 px-4 py-3 font-semibold text-white hover:bg-green-800"
+              >
+                <span aria-hidden="true">⭐</span>
+                Write a Google Review
+              </Link>
+
+              {/* Direct Google Review link */}
+              {googleReviewUrl && (
+                <a
+                  href={googleReviewUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 rounded-xl border border-green-700 px-4 py-3 font-semibold text-green-800 hover:bg-green-50"
+                >
+                  <span aria-hidden="true">↗️</span>
+                  Open Google Reviews
+                </a>
+              )}
+
+              {/* Clothing catalogue */}
               {shop.category === "clothing" &&
                 features.productCatalogue && (
                   <Link
@@ -141,7 +173,7 @@ export default async function ShopPage({ params }: ShopPageProps) {
                   </Link>
                 )}
 
-              {/* Vehicle catalogue button */}
+              {/* Vehicle catalogue */}
               {shop.features?.vehicleCatalogue && (
                 <Link
                   href={`/shop/${shop.slug}/vehicles`}
@@ -152,7 +184,7 @@ export default async function ShopPage({ params }: ShopPageProps) {
                 </Link>
               )}
 
-              {/* Restaurant menu button */}
+              {/* Restaurant menu */}
               {shop.category === "restaurants" &&
                 features.digitalMenu && (
                   <Link
@@ -165,6 +197,7 @@ export default async function ShopPage({ params }: ShopPageProps) {
                 )}
             </div>
 
+            {/* Welcome section */}
             {features.digitalProfile && (
               <section className="mt-8 rounded-xl bg-green-50 p-4">
                 <h2 className="font-semibold text-green-900">
@@ -173,15 +206,17 @@ export default async function ShopPage({ params }: ShopPageProps) {
 
                 <div className="mt-3 rounded-2xl border bg-white p-5">
                   <h3 className="text-xl font-bold">Welcome Message</h3>
+
                   <p className="mt-2 text-gray-600">
                     {shop.welcomeMessage}
                   </p>
+
                   <WelcomeVoice message={shop.welcomeMessage} />
                 </div>
               </section>
             )}
 
-            {/* Keep the existing services list */}
+            {/* Services list */}
             {features.serviceCatalogue && (
               <section className="mt-8">
                 <h2 className="text-xl font-bold">Services</h2>
@@ -200,6 +235,7 @@ export default async function ShopPage({ params }: ShopPageProps) {
               </section>
             )}
 
+            {/* Contact information */}
             <section className="mt-8 border-t pt-6">
               <h2 className="text-xl font-bold">Contact Information</h2>
 
