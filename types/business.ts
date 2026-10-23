@@ -28,4 +28,6 @@ export type Business = {
   welcomeMessage: string;
   isActive: boolean;
   features?: BusinessFeatures;
+    googleReviewUrl?: string;
+
 };

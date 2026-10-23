@@ -556,53 +556,47 @@ export default function ReviewExperience({ business }: Props) {
     }
   }
 
-  async function goToGoogleProfile() {
-    setError("");
-    setNotice("");
 
-    const review = editedReview.trim();
+  const goToGoogleProfile = async () => {
+  const reviewText = editedReview.trim();
 
-    if (!review) {
-      setError("Pehle ek review select karein.");
-      return;
-    }
-
-    if (!confirmed) {
-      setError(
-        "Confirm karein ki review aapke genuine experience ko accurately describe karta hai."
-      );
-      return;
-    }
-
-    if (!business.googleReviewUrl) {
-      setError("Google review link abhi configure nahi hai.");
-      return;
-    }
-
-    // Open Google from the user's click.
-    const googleWindow = window.open(
-      business.googleReviewUrl,
-      "_blank"
-    );
-
-    try {
-      await navigator.clipboard.writeText(review);
-
-      setNotice(
-        "Review copy ho gaya! Google page par paste karein aur khud submit karein."
-      );
-
-      if (!googleWindow) {
-        setNotice(
-          "Review copy ho gaya. Neeche Google review link par click karke paste karein."
-        );
-      }
-    } catch {
-      setNotice(
-        "Review clipboard par copy nahi ho saka. Google page par review manually paste karein."
-      );
-    }
+  if (!reviewText) {
+    setNotice("Pehle apna review select ya likho.");
+    return;
   }
+
+  if (!business.googleReviewUrl) {
+    setNotice("Google review link available nahi hai.");
+    return;
+  }
+
+  // Click ke turant baad Google page kholne ki koshish
+  const googleTab = window.open(
+    business.googleReviewUrl,
+    "_blank"
+  );
+
+  try {
+    await navigator.clipboard.writeText(reviewText);
+    setNotice(
+      "Review copy ho gaya! Google page par paste karke submit karo."
+    );
+  } catch (error) {
+    console.error("Clipboard copy failed:", error);
+
+    setNotice(
+      "Review automatic copy nahi hua. Review ko manually copy karke Google par paste karo."
+    );
+  }
+
+  if (!googleTab) {
+    setNotice(
+      "Google page popup se block hua ho sakta hai. Google review link manually kholo."
+    );
+  }
+};
+
+
 
   return (
     <main className="min-h-screen bg-gray-50 px-4 py-8 text-gray-900">
